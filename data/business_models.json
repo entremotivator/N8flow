@@ -1,0 +1,244 @@
+{
+  "lead_capture_model": {
+    "name": "Lead Capture Process",
+    "description": "Complete lead capture and nurturing workflow",
+    "type": "lead_generation",
+    "nodes": [
+      {
+        "id": "start",
+        "type": "trigger",
+        "label": "Website Visit",
+        "x": 100,
+        "y": 100
+      },
+      {
+        "id": "form",
+        "type": "form",
+        "label": "Contact Form",
+        "x": 250,
+        "y": 100
+      },
+      {
+        "id": "webhook",
+        "type": "webhook",
+        "label": "Send to CRM",
+        "x": 400,
+        "y": 100
+      },
+      {
+        "id": "email",
+        "type": "notification",
+        "label": "Welcome Email",
+        "x": 550,
+        "y": 100
+      },
+      {
+        "id": "condition",
+        "type": "condition",
+        "label": "Qualified Lead?",
+        "x": 400,
+        "y": 250
+      },
+      {
+        "id": "sales_notify",
+        "type": "notification",
+        "label": "Notify Sales",
+        "x": 550,
+        "y": 200
+      },
+      {
+        "id": "nurture",
+        "type": "action",
+        "label": "Add to Nurture",
+        "x": 550,
+        "y": 300
+      },
+      {
+        "id": "end",
+        "type": "end",
+        "label": "Process Complete",
+        "x": 700,
+        "y": 250
+      }
+    ],
+    "connections": [
+      {
+        "from": "start",
+        "to": "form"
+      },
+      {
+        "from": "form",
+        "to": "webhook"
+      },
+      {
+        "from": "webhook",
+        "to": "email"
+      },
+      {
+        "from": "email",
+        "to": "condition"
+      },
+      {
+        "from": "condition",
+        "to": "sales_notify",
+        "condition": "qualified"
+      },
+      {
+        "from": "condition",
+        "to": "nurture",
+        "condition": "not_qualified"
+      },
+      {
+        "from": "sales_notify",
+        "to": "end"
+      },
+      {
+        "from": "nurture",
+        "to": "end"
+      }
+    ],
+    "webhooks": [
+      "lead_capture",
+      "crm_integration"
+    ],
+    "forms": [
+      "contact_form"
+    ],
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  "support_ticket_model": {
+    "name": "Support Ticket Workflow",
+    "description": "Customer support ticket processing and resolution",
+    "type": "support_workflow",
+    "nodes": [
+      {
+        "id": "ticket_created",
+        "type": "trigger",
+        "label": "Ticket Created",
+        "x": 100,
+        "y": 100
+      },
+      {
+        "id": "categorize",
+        "type": "condition",
+        "label": "Categorize Issue",
+        "x": 250,
+        "y": 100
+      },
+      {
+        "id": "urgent",
+        "type": "action",
+        "label": "Urgent Queue",
+        "x": 400,
+        "y": 50
+      },
+      {
+        "id": "normal",
+        "type": "action",
+        "label": "Normal Queue",
+        "x": 400,
+        "y": 150
+      },
+      {
+        "id": "auto_response",
+        "type": "notification",
+        "label": "Auto Response",
+        "x": 550,
+        "y": 100
+      },
+      {
+        "id": "assign",
+        "type": "action",
+        "label": "Assign Agent",
+        "x": 700,
+        "y": 100
+      },
+      {
+        "id": "resolved",
+        "type": "condition",
+        "label": "Resolved?",
+        "x": 850,
+        "y": 100
+      },
+      {
+        "id": "close",
+        "type": "action",
+        "label": "Close Ticket",
+        "x": 1000,
+        "y": 50
+      },
+      {
+        "id": "escalate",
+        "type": "action",
+        "label": "Escalate",
+        "x": 1000,
+        "y": 150
+      },
+      {
+        "id": "end",
+        "type": "end",
+        "label": "Complete",
+        "x": 1150,
+        "y": 100
+      }
+    ],
+    "connections": [
+      {
+        "from": "ticket_created",
+        "to": "categorize"
+      },
+      {
+        "from": "categorize",
+        "to": "urgent",
+        "condition": "high_priority"
+      },
+      {
+        "from": "categorize",
+        "to": "normal",
+        "condition": "normal_priority"
+      },
+      {
+        "from": "urgent",
+        "to": "auto_response"
+      },
+      {
+        "from": "normal",
+        "to": "auto_response"
+      },
+      {
+        "from": "auto_response",
+        "to": "assign"
+      },
+      {
+        "from": "assign",
+        "to": "resolved"
+      },
+      {
+        "from": "resolved",
+        "to": "close",
+        "condition": "yes"
+      },
+      {
+        "from": "resolved",
+        "to": "escalate",
+        "condition": "no"
+      },
+      {
+        "from": "close",
+        "to": "end"
+      },
+      {
+        "from": "escalate",
+        "to": "end"
+      }
+    ],
+    "webhooks": [
+      "support_ticket",
+      "agent_notification"
+    ],
+    "forms": [
+      "support_form"
+    ],
+    "created_at": "2024-01-01T00:00:00Z"
+  }
+}

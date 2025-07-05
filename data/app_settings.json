@@ -1,0 +1,64 @@
+{
+  "general": {
+    "app_name": "n8n Business Suite",
+    "theme": "light",
+    "auto_save": true,
+    "notifications": true,
+    "language": "en",
+    "timezone": "UTC"
+  },
+  "webhooks": {
+    "timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 5,
+    "default_headers": {
+      "Content-Type": "application/json",
+      "User-Agent": "n8n-business-suite/1.0"
+    }
+  },
+  "forms": {
+    "max_file_size": 10,
+    "allowed_file_types": [
+      "pdf",
+      "jpg",
+      "jpeg",
+      "png",
+      "mp3",
+      "wav",
+      "m4a"
+    ],
+    "required_field_indicator": "*",
+    "validation_enabled": true
+  },
+  "security": {
+    "enable_csrf": true,
+    "session_timeout": 3600,
+    "max_login_attempts": 5,
+    "password_min_length": 8
+  },
+  "analytics": {
+    "track_form_submissions": true,
+    "track_webhook_calls": true,
+    "retention_days": 90,
+    "export_format": "json"
+  },
+  "ui": {
+    "sidebar_expanded": true,
+    "show_tooltips": true,
+    "animation_enabled": true,
+    "compact_mode": false
+  },
+  "integrations": {
+    "n8n_base_url": "",
+    "api_key": "",
+    "slack_webhook": "",
+    "email_service": "smtp",
+    "smtp_settings": {
+      "host": "",
+      "port": 587,
+      "username": "",
+      "password": "",
+      "use_tls": true
+    }
+  }
+}

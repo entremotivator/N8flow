@@ -1,0 +1,67 @@
+{
+  "lead_capture": {
+    "name": "Lead Capture",
+    "url": "https://your-n8n-instance.com/webhook/lead-capture",
+    "description": "Captures leads from contact forms",
+    "fields": [
+      "name",
+      "email",
+      "phone",
+      "company",
+      "message"
+    ],
+    "active": true
+  },
+  "customer_feedback": {
+    "name": "Customer Feedback",
+    "url": "https://your-n8n-instance.com/webhook/feedback",
+    "description": "Collects customer feedback and reviews",
+    "fields": [
+      "name",
+      "email",
+      "rating",
+      "feedback",
+      "product"
+    ],
+    "active": true
+  },
+  "appointment_booking": {
+    "name": "Appointment Booking",
+    "url": "https://your-n8n-instance.com/webhook/booking",
+    "description": "Handles appointment scheduling",
+    "fields": [
+      "name",
+      "email",
+      "phone",
+      "service",
+      "date",
+      "time"
+    ],
+    "active": true
+  },
+  "support_ticket": {
+    "name": "Support Ticket",
+    "url": "https://your-n8n-instance.com/webhook/support",
+    "description": "Creates support tickets",
+    "fields": [
+      "name",
+      "email",
+      "priority",
+      "category",
+      "description"
+    ],
+    "active": true
+  },
+  "newsletter_signup": {
+    "name": "Newsletter Signup",
+    "url": "https://your-n8n-instance.com/webhook/newsletter",
+    "description": "Newsletter subscription management",
+    "fields": [
+      "email",
+      "name",
+      "preferences",
+      "source"
+    ],
+    "active": true
+  }
+}

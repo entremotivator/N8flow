@@ -1,0 +1,150 @@
+{
+  "contact_form": {
+    "name": "Contact Form",
+    "description": "Basic contact form for lead capture",
+    "fields": [
+      {
+        "name": "full_name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "webhook_key": "lead_capture"
+  },
+  "feedback_form": {
+    "name": "Customer Feedback Form",
+    "description": "Collect customer feedback and ratings",
+    "fields": [
+      {
+        "name": "customer_name",
+        "label": "Your Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "rating",
+        "label": "Overall Rating",
+        "type": "slider",
+        "min_value": 1,
+        "max_value": 5,
+        "required": true
+      },
+      {
+        "name": "product",
+        "label": "Product/Service",
+        "type": "select",
+        "options": [
+          "Product A",
+          "Product B",
+          "Service X",
+          "Service Y"
+        ],
+        "required": true
+      },
+      {
+        "name": "feedback",
+        "label": "Your Feedback",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "recommend",
+        "label": "Would you recommend us?",
+        "type": "radio",
+        "options": [
+          "Yes",
+          "No",
+          "Maybe"
+        ],
+        "required": true
+      }
+    ],
+    "webhook_key": "customer_feedback"
+  },
+  "booking_form": {
+    "name": "Appointment Booking Form",
+    "description": "Schedule appointments and consultations",
+    "fields": [
+      {
+        "name": "client_name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "service",
+        "label": "Service Type",
+        "type": "select",
+        "options": [
+          "Consultation",
+          "Meeting",
+          "Demo",
+          "Support"
+        ],
+        "required": true
+      },
+      {
+        "name": "preferred_date",
+        "label": "Preferred Date",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "preferred_time",
+        "label": "Preferred Time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "name": "notes",
+        "label": "Additional Notes",
+        "type": "textarea",
+        "required": false
+      }
+    ],
+    "webhook_key": "appointment_booking"
+  }
+}
