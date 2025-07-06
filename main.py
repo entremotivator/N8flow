@@ -128,56 +128,12 @@ BUSINESS_EXAMPLES = {
                 }
             },
             {
-                "name": "Quote Request System",
-                "description": "Automated quote generation and follow-up for service requests",
-                "complexity": "Advanced",
-                "fields": ["name", "email", "company", "service_type", "budget_range", "timeline", "requirements"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/quote-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
                 "name": "Newsletter Subscription",
                 "description": "Newsletter signup with segmentation and automated welcome series",
                 "complexity": "Beginner",
                 "fields": ["email", "name", "interests", "frequency_preference"],
                 "webhook_config": {
                     "url": "https://your-n8n.com/webhook/newsletter",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Product Demo Booking",
-                "description": "Schedule product demonstrations with calendar integration",
-                "complexity": "Intermediate",
-                "fields": ["name", "email", "company", "phone", "preferred_date", "product_interest"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/demo-booking",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Event Registration Portal",
-                "description": "Comprehensive event registration with payment processing",
-                "complexity": "Advanced",
-                "fields": ["name", "email", "company", "phone", "event_type", "ticket_quantity", "dietary_requirements"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/event-registration",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Free Consultation Request",
-                "description": "Book free consultations with automated scheduling and preparation",
-                "complexity": "Intermediate",
-                "fields": ["name", "email", "phone", "company", "consultation_type", "preferred_time", "current_challenges"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/consultation",
                     "method": "POST",
                     "headers": {"Content-Type": "application/json"}
                 }
@@ -209,72 +165,6 @@ BUSINESS_EXAMPLES = {
                     "method": "POST",
                     "headers": {"Content-Type": "application/json"}
                 }
-            },
-            {
-                "name": "Product Return Request",
-                "description": "Streamlined return process with automated approval and shipping labels",
-                "complexity": "Advanced",
-                "fields": ["order_number", "email", "product_name", "return_reason", "condition", "refund_method"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/returns",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Warranty Claim Processing",
-                "description": "Automated warranty claim validation and processing workflow",
-                "complexity": "Advanced",
-                "fields": ["product_serial", "purchase_date", "customer_email", "issue_description", "proof_of_purchase"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/warranty",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Service Appointment Booking",
-                "description": "Schedule service appointments with technician assignment and reminders",
-                "complexity": "Intermediate",
-                "fields": ["name", "email", "phone", "service_type", "preferred_date", "address", "issue_description"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/service-booking",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Complaint Resolution",
-                "description": "Structured complaint handling with escalation and resolution tracking",
-                "complexity": "Intermediate",
-                "fields": ["name", "email", "phone", "complaint_type", "severity", "description", "desired_outcome"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/complaints",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Knowledge Base Article Request",
-                "description": "Customer-driven knowledge base content creation and updates",
-                "complexity": "Beginner",
-                "fields": ["name", "email", "topic", "question", "urgency", "current_documentation"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/kb-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Customer Onboarding Process",
-                "description": "Automated customer onboarding with progress tracking and milestone notifications",
-                "complexity": "Advanced",
-                "fields": ["company_name", "contact_email", "phone", "industry", "team_size", "goals", "timeline"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/onboarding",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
             }
         ]
     },
@@ -300,354 +190,6 @@ BUSINESS_EXAMPLES = {
                 "fields": ["company_name", "contact_email", "project_scope", "budget_range", "deadline", "requirements"],
                 "webhook_config": {
                     "url": "https://your-n8n.com/webhook/proposal-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Contract Signature Workflow",
-                "description": "Digital contract processing with e-signature integration",
-                "complexity": "Advanced",
-                "fields": ["client_name", "email", "contract_type", "value", "terms", "signature_deadline"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/contract-signature",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Sales Follow-up Automation",
-                "description": "Automated follow-up sequences based on prospect behavior",
-                "complexity": "Intermediate",
-                "fields": ["prospect_name", "email", "last_interaction", "interest_level", "next_action", "notes"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/sales-followup",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Customer Referral Program",
-                "description": "Automated referral tracking and reward distribution",
-                "complexity": "Intermediate",
-                "fields": ["referrer_name", "referrer_email", "referee_name", "referee_email", "referral_source"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/referral",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Win/Loss Analysis Form",
-                "description": "Capture deal outcomes for sales process improvement",
-                "complexity": "Beginner",
-                "fields": ["deal_id", "outcome", "value", "reason", "competitor", "lessons_learned"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/win-loss",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Upsell Opportunity Tracking",
-                "description": "Identify and track upselling opportunities with existing customers",
-                "complexity": "Intermediate",
-                "fields": ["customer_name", "current_plan", "usage_metrics", "opportunity_type", "potential_value"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/upsell",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Sales Territory Assignment",
-                "description": "Automated lead routing based on geographic and industry criteria",
-                "complexity": "Advanced",
-                "fields": ["lead_name", "company", "location", "industry", "deal_size", "sales_rep"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/territory-assignment",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            }
-        ]
-    },
-    "hr_processes": {
-        "name": "HR Processes",
-        "icon": "👥",
-        "examples": [
-            {
-                "name": "Job Application Portal",
-                "description": "Streamlined job application process with automated screening",
-                "complexity": "Intermediate",
-                "fields": ["name", "email", "phone", "position", "experience", "resume", "cover_letter"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/job-application",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Employee Onboarding Workflow",
-                "description": "Comprehensive new hire onboarding with task automation",
-                "complexity": "Advanced",
-                "fields": ["employee_name", "email", "department", "position", "start_date", "manager", "equipment_needs"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/employee-onboarding",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Performance Review System",
-                "description": "Automated performance review scheduling and tracking",
-                "complexity": "Advanced",
-                "fields": ["employee_name", "reviewer", "review_period", "goals", "achievements", "areas_for_improvement"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/performance-review",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Time Off Request System",
-                "description": "Automated vacation and leave request processing",
-                "complexity": "Intermediate",
-                "fields": ["employee_name", "email", "leave_type", "start_date", "end_date", "reason", "manager_approval"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/time-off",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Expense Report Submission",
-                "description": "Digital expense reporting with automated approval workflow",
-                "complexity": "Intermediate",
-                "fields": ["employee_name", "expense_date", "category", "amount", "description", "receipt", "project_code"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/expense-report",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Training Program Enrollment",
-                "description": "Employee training registration and progress tracking",
-                "complexity": "Intermediate",
-                "fields": ["employee_name", "email", "training_program", "preferred_dates", "learning_goals", "manager_approval"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/training-enrollment",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Employee Exit Interview",
-                "description": "Structured exit interview process with feedback analysis",
-                "complexity": "Intermediate",
-                "fields": ["employee_name", "department", "exit_date", "reason", "feedback", "recommendations"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/exit-interview",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Workplace Incident Reporting",
-                "description": "Safety incident reporting with automated investigation workflow",
-                "complexity": "Advanced",
-                "fields": ["reporter_name", "incident_date", "location", "type", "description", "injuries", "witnesses"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/incident-report",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            }
-        ]
-    },
-    "marketing": {
-        "name": "Marketing",
-        "icon": "📢",
-        "examples": [
-            {
-                "name": "Marketing Campaign Brief",
-                "description": "Structured campaign planning and approval workflow",
-                "complexity": "Intermediate",
-                "fields": ["campaign_name", "objective", "target_audience", "budget", "timeline", "channels", "kpis"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/campaign-brief",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Content Creation Request",
-                "description": "Automated content production workflow with approval stages",
-                "complexity": "Intermediate",
-                "fields": ["content_type", "topic", "target_audience", "deadline", "requirements", "brand_guidelines"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/content-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Influencer Outreach Program",
-                "description": "Automated influencer identification and outreach management",
-                "complexity": "Advanced",
-                "fields": ["influencer_name", "platform", "followers", "engagement_rate", "niche", "campaign_fit"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/influencer-outreach",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Event Planning Request",
-                "description": "Comprehensive event planning and coordination workflow",
-                "complexity": "Advanced",
-                "fields": ["event_name", "type", "date", "location", "attendees", "budget", "requirements"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/event-planning",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Brand Asset Request",
-                "description": "Centralized brand asset management and distribution",
-                "complexity": "Beginner",
-                "fields": ["requester_name", "department", "asset_type", "usage", "deadline", "specifications"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/brand-assets",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Market Research Request",
-                "description": "Automated market research project initiation and tracking",
-                "complexity": "Intermediate",
-                "fields": ["research_topic", "objectives", "target_market", "methodology", "timeline", "budget"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/market-research",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Social Media Content Approval",
-                "description": "Social media content review and approval workflow",
-                "complexity": "Intermediate",
-                "fields": ["platform", "content_type", "caption", "hashtags", "scheduled_time", "campaign"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/social-approval",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Partnership Proposal Submission",
-                "description": "Strategic partnership evaluation and approval process",
-                "complexity": "Advanced",
-                "fields": ["partner_name", "partnership_type", "proposal", "benefits", "timeline", "investment"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/partnership",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            }
-        ]
-    },
-    "finance_accounting": {
-        "name": "Finance & Accounting",
-        "icon": "💳",
-        "examples": [
-            {
-                "name": "Invoice Submission Portal",
-                "description": "Automated invoice processing and approval workflow",
-                "complexity": "Intermediate",
-                "fields": ["vendor_name", "invoice_number", "amount", "due_date", "description", "invoice_file"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/invoice-submission",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Budget Request System",
-                "description": "Department budget requests with approval hierarchy",
-                "complexity": "Advanced",
-                "fields": ["department", "budget_category", "amount", "justification", "timeline", "approver"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/budget-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Purchase Requisition System",
-                "description": "Automated purchase order creation and approval",
-                "complexity": "Intermediate",
-                "fields": ["requester", "vendor", "items", "total_amount", "justification", "urgency"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/purchase-requisition",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Travel Expense Management",
-                "description": "Travel expense reporting with policy compliance checking",
-                "complexity": "Advanced",
-                "fields": ["employee_name", "trip_purpose", "destination", "dates", "expenses", "receipts"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/travel-expenses",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Financial Report Request",
-                "description": "Automated financial reporting and distribution",
-                "complexity": "Intermediate",
-                "fields": ["report_type", "period", "department", "recipient", "deadline", "format"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/financial-report",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Vendor Onboarding Process",
-                "description": "New vendor registration and compliance verification",
-                "complexity": "Advanced",
-                "fields": ["vendor_name", "contact_info", "services", "tax_id", "insurance", "references"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/vendor-onboarding",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Internal Audit Request",
-                "description": "Audit scheduling and documentation workflow",
-                "complexity": "Advanced",
-                "fields": ["audit_type", "department", "scope", "auditor", "timeline", "compliance_areas"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/audit-request",
-                    "method": "POST",
-                    "headers": {"Content-Type": "application/json"}
-                }
-            },
-            {
-                "name": "Payment Authorization System",
-                "description": "Multi-level payment approval with fraud detection",
-                "complexity": "Advanced",
-                "fields": ["payee", "amount", "purpose", "account", "authorization_level", "supporting_docs"],
-                "webhook_config": {
-                    "url": "https://your-n8n.com/webhook/payment-authorization",
                     "method": "POST",
                     "headers": {"Content-Type": "application/json"}
                 }
@@ -725,7 +267,6 @@ def main():
 
     # Sidebar Navigation
     with st.sidebar:
-        st.image("https://via.placeholder.com/200x80/667eea/white?text=n8n+Suite", width=200)
         st.markdown("### Complete Business Automation")
         
         page = st.selectbox(
@@ -824,7 +365,7 @@ def show_dashboard():
     
     df = pd.DataFrame(activity_data)
     
-    fig = px.line(df, x="Date", y=["Forms Created", "Webhooks Triggered"], 
+    fig = px.line(df, x="Date", y=["Forms Created", "Webhooks Triggered"],
                   title="Weekly Activity Overview")
     st.plotly_chart(fig, use_container_width=True)
 
@@ -942,7 +483,7 @@ def show_form_builder():
             with col3:
                 if st.button(f"🗑️ Remove", key=f"remove_{i}"):
                     st.session_state.form_fields.pop(i)
-                    st.experimental_rerun()
+                    st.rerun()
 
     # Form Preview and Test
     if st.session_state.form_fields:
@@ -1044,23 +585,23 @@ def show_business_modeler():
                 
                 if "Form" in node:
                     st.text_input(f"Form Name for {node}", key=f"form_name_{node}")
-                    st.multiselect(f"Form Fields for {node}", 
-                                 ["Name", "Email", "Phone", "Company", "Message"], 
-                                 key=f"form_fields_{node}")
+                    st.multiselect(f"Form Fields for {node}",
+                                  ["Name", "Email", "Phone", "Company", "Message"],
+                                  key=f"form_fields_{node}")
                 
                 elif "Webhook" in node:
                     st.text_input(f"Webhook URL for {node}", key=f"webhook_url_{node}")
                     st.selectbox(f"Method for {node}", ["POST", "GET", "PUT"], key=f"method_{node}")
                 
                 elif "Condition" in node:
-                    st.text_input(f"Condition Logic for {node}", 
-                                placeholder="e.g., if amount > 1000", 
-                                key=f"condition_{node}")
+                    st.text_input(f"Condition Logic for {node}",
+                                 placeholder="e.g., if amount > 1000",
+                                 key=f"condition_{node}")
                 
                 elif "Notification" in node:
-                    st.selectbox(f"Notification Type for {node}", 
-                               ["Email", "SMS", "Slack", "Teams"], 
-                               key=f"notification_type_{node}")
+                    st.selectbox(f"Notification Type for {node}",
+                                ["Email", "SMS", "Slack", "Teams"],
+                                key=f"notification_type_{node}")
                     st.text_area(f"Message Template for {node}", key=f"message_{node}")
 
     # Process Flow Visualization
@@ -1195,7 +736,7 @@ def show_settings():
             retry_attempts = st.number_input("Retry Attempts", value=3, min_value=1, max_value=10)
             retry_delay = st.number_input("Retry Delay (seconds)", value=2, min_value=1, max_value=30)
         
-        st.text_area("Default Headers (JSON format)", 
+        st.text_area("Default Headers (JSON format)",
                     value='{"Content-Type": "application/json"}',
                     help="Headers to include with all webhook requests")
         
@@ -1224,82 +765,6 @@ def show_settings():
         if st.button("💾 Save Form Settings"):
             st.success("✅ Form settings saved!")
 
-    # Security Settings
-    with st.expander("🔐 Security Settings"):
-        st.subheader("Security Configuration")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            csrf_protection = st.checkbox("Enable CSRF Protection", value=True)
-            session_timeout = st.number_input("Session Timeout (minutes)", value=30, min_value=5, max_value=480)
-        
-        with col2:
-            max_login_attempts = st.number_input("Max Login Attempts", value=5, min_value=1, max_value=20)
-            password_min_length = st.number_input("Minimum Password Length", value=8, min_value=4, max_value=50)
-        
-        if st.button("💾 Save Security Settings"):
-            st.success("✅ Security settings saved!")
-
-    # Analytics Settings
-    with st.expander("📊 Analytics Settings"):
-        st.subheader("Analytics & Reporting")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            track_submissions = st.checkbox("Track Form Submissions", value=True)
-            track_webhooks = st.checkbox("Track Webhook Calls", value=True)
-        
-        with col2:
-            data_retention_days = st.number_input("Data Retention (days)", value=90, min_value=1, max_value=365)
-            export_format = st.selectbox("Default Export Format", ["CSV", "JSON", "Excel"])
-        
-        if st.button("💾 Save Analytics Settings"):
-            st.success("✅ Analytics settings saved!")
-
-    # UI Settings
-    with st.expander("🎨 UI/UX Settings"):
-        st.subheader("User Interface Configuration")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            theme = st.selectbox("Theme", ["Light", "Dark", "Auto"])
-            sidebar_default = st.selectbox("Sidebar Default State", ["Expanded", "Collapsed"])
-        
-        with col2:
-            animations = st.checkbox("Enable Animations", value=True)
-            compact_mode = st.checkbox("Compact Mode", value=False)
-        
-        if st.button("💾 Save UI Settings"):
-            st.success("✅ UI settings saved!")
-
-    # Integration Settings
-    with st.expander("🔌 Integration Settings"):
-        st.subheader("External Integrations")
-        
-        st.text_input("n8n Instance URL", placeholder="https://your-n8n-instance.com")
-        st.text_input("API Key", type="password", placeholder="Your n8n API key")
-        
-        st.subheader("Slack Integration")
-        st.text_input("Slack Webhook URL", placeholder="https://hooks.slack.com/...")
-        
-        st.subheader("Email Service")
-        email_service = st.selectbox("Email Provider", ["SMTP", "SendGrid", "Mailgun", "AWS SES"])
-        
-        if email_service == "SMTP":
-            col1, col2 = st.columns(2)
-            with col1:
-                st.text_input("SMTP Server")
-                st.text_input("Username")
-            with col2:
-                st.number_input("Port", value=587)
-                st.text_input("Password", type="password")
-        
-        if st.button("💾 Save Integration Settings"):
-            st.success("✅ Integration settings saved!")
-
 def show_chatbots():
     """Chatbots page"""
     st.header("🤖 Embedded Chatbots")
@@ -1322,16 +787,6 @@ def show_chatbots():
             "description": "Schedule appointments and manage calendars",
             "use_cases": ["Appointment booking", "Calendar management", "Reminders"],
             "integration": "Embed on service pages and contact forms"
-        },
-        "Feedback Collector": {
-            "description": "Gather customer feedback and reviews",
-            "use_cases": ["Survey completion", "Review collection", "NPS scoring"],
-            "integration": "Embed post-purchase or in-app"
-        },
-        "HR Onboarding Bot": {
-            "description": "Guide new employees through onboarding",
-            "use_cases": ["Document collection", "Training scheduling", "FAQ"],
-            "integration": "Embed in employee portal"
         }
     }
     
@@ -1353,8 +808,7 @@ def show_chatbots():
                 if st.button(f"🚀 Deploy {bot_name}", key=f"deploy_{bot_name}"):
                     if webhook_url:
                         st.success(f"✅ {bot_name} deployed successfully!")
-                        st.code(f"""
-<!-- Embed code for {bot_name} -->
+                        st.code(f"""<!-- Embed code for {bot_name} -->
 <iframe 
     src="https://your-chatbot-service.com/embed/{bot_name.lower().replace(' ', '-')}"
     width="100%" 
@@ -1370,10 +824,10 @@ def show_chatbots():
     
     # Sample analytics data
     analytics_data = {
-        "Bot": ["Support Bot", "Sales Bot", "Booking Bot", "Feedback Bot", "HR Bot"],
-        "Conversations": [245, 189, 156, 98, 67],
-        "Success Rate": [87, 92, 78, 95, 88],
-        "Avg Response Time": [2.3, 1.8, 3.1, 1.5, 2.7]
+        "Bot": ["Support Bot", "Sales Bot", "Booking Bot"],
+        "Conversations": [245, 189, 156],
+        "Success Rate": [87, 92, 78],
+        "Avg Response Time": [2.3, 1.8, 3.1]
     }
     
     df = pd.DataFrame(analytics_data)
@@ -1402,4 +856,7 @@ def show_footer():
 if __name__ == "__main__":
     main()
     show_footer()
+
+print("n8n Business Suite application created successfully!")
+print("To run the application, use: streamlit run streamlit_business_suite.py")
 
